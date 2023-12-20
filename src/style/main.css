@@ -29,4 +29,69 @@ body {
 
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.hover {
+  width: 50%;
+  height: auto;
+
+  padding: 1rem;
+
+  background: whitesmoke;
+  border-radius: 1rem;
+}
+
+.hover #time {
+  width: auto;
+  height: auto;
+}
+
+.hover #time .timeContainer {
+  width: auto;
+  height: auto;
+}
+
+.hover #time .timeContainer h1 {
+  width: auto;
+  font-size: 60px;
+}
+
+.hover .controller {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.hover .controller button {
+  color: whitesmoke;
+  font-size: 15px;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.hover .controller button:hover {
+  cursor: pointer;
+  opacity: .6;
+  transform: scale(.95);
+}
+
+.hover .controller button#reset {
+  background: #fe0000;
+}
+
+.hover .controller button#start, .hover .controller button#pause {
+  background: rgba(13,110,253, 1);
 }

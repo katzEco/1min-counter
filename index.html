@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="./src/style/main.css" />
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="hover">
+        <div id="time"></div>
+        <div class="controller">
+          <button id="reset" onclick="reset()">Reset</button>
+          <button id="start" onclick="start()">Start</button>
+          <button id="pause" onclick="pause()" class="hidden">Pause</button>
+        </div>
+      </div>
+    </div>
     <div id="navbar"></div>
     <div id="footer"></div>
 
