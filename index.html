@@ -24,5 +24,19 @@
     <script src="./src/js/counter.js"></script>
     <script src="./src/js/components/navbar.js"></script>
     <script src="./src/js/components/footer.js"></script>
+
+    <script>
+      window.addEventListener("keydown", (event) => {
+        if (event.code === "Space") {
+          if (sessionStorage.getItem('start')) {
+            pause()
+          } else {
+            start()
+          }
+        } else if (event.code === "KeyR") {
+          reset();
+        }
+      });
+    </script>
   </body>
 </html>

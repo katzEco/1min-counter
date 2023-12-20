@@ -56,12 +56,14 @@ function timer() {
 function start() {
   startButton.classList.add("hidden");
   pauseButton.classList.remove("hidden");
+  sessionStorage.setItem("start", true);
   timer();
 }
 
 function pause() {
   pauseButton.classList.add("hidden");
   startButton.classList.remove("hidden");
+  sessionStorage.clear();
   clearInterval(count);
 }
 
